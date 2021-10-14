@@ -9,6 +9,7 @@
 <body>
  <form action="#" method="POST"></form>
   
+ <!-- 1. h1 should not be used inside a form tag. -->
   <h1>Order food</h1>
    <fieldset>
     <legend>Billing details</legend>
@@ -45,6 +46,7 @@
      <br><fieldset>
          <legend>Pay options</legend>
          <br><label for="pay">Pay type:</label></br>
+         <!-- 2. Multiple id attributes with the same value. -->
          <br><input type="radio" id="pay" name="pay" value="cash">Cash</br>
          <br><input type="radio" id="pay" name="pay" value="credit-card">Credit card</br>
      </fieldset>
